@@ -1,0 +1,115 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,900);
+.sidebar {
+    position: fixed; 
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    color:#e21d58;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+
+    }
+   
+.col-sm-3 {
+    width: 25%;
+}
+body{
+   font-family: 'Oswald', sans-serif;
+}
+hr{
+    border-top:1px solid black;
+    width:50px
+    margin-top:15px;
+}
+.background{
+    width:100%;
+    height: 100%;
+}
+.info-card {
+    float: left;
+    margin: 10px;
+    -webkit-perspective: 600px;
+}
+
+.front, .back {
+    background: #FFF;
+    border-radius: 10px;
+    transition: -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    border: 1px solid black;
+}
+
+.front {
+    overflow: hidden;
+    width: 250px;
+    height: 330px;
+    position: absolute;
+    z-index: 1;
+}
+
+.back {
+    padding: 20px;
+    padding-top: 0px;
+    width: 250px;
+    height: 330px;
+    -webkit-transform: rotateY(-180deg);
+    overflow: scroll;
+}
+
+.info-card:hover .back {
+    -webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+    -webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}
+
+#popUpWindow{
+  background: black; 
+}
+body { padding: 2em; }
+
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}

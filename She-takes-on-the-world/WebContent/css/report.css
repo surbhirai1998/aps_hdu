@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+.report{
+	margin:50px;
+	width:100%;
+	height:auto;
+	border:1px solid black;
+}
+
+

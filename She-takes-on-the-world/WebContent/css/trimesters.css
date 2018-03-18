@@ -1,0 +1,24 @@
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+h3{
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Oswald',sans-serif;
+}
+ul li{
+	font-size: 18px;
+}
+div{
+	font-size: 22px;
+}
+img{
+	box-sizing: border-box;
+	box-shadow: grey;
+}
+body{
+	background-color: #ef9b7a;
+}

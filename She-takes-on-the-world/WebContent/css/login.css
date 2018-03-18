@@ -1,0 +1,191 @@
+@CHARSET "ISO-8859-1";
+*{
+	box-sizing:border-box;
+}
+/*
+@media only screen and (max-width:620px) {
+  / For mobile phones: /
+  .menu, .main, .right {
+    width:100%;
+  }
+*/
+
+a:hover{
+	color : #008000;
+}
+
+.background{
+	height: 100%;
+	width:100%;
+	position:absolute;
+	display : flex;
+	flex-direction : column;
+}
+body{
+	font-family: Raleway,sans-serif;
+	background-color :#eeeeee ;
+	margin : 0;
+}
+div{
+	padding :0.1vw;
+	
+}
+.header{
+	padding : 0px;
+	margin : 0px 0px 0px 0px 0px;
+	width:100%;
+	background-color:  #3CBC8D;
+}
+.header .logo{
+	float : left;
+	width : 25%;
+	height : auto;
+}
+
+.header .title{
+	width : 100%;
+ 	font-family : 'Courgette',sans-serif;
+ }
+
+.header h1{
+	text-align: center;
+}
+
+.navigationBar{
+	background:#3CBC8D;
+	border :2px solid #38af83;
+	font-size  :1.5vw;
+	font-family: Raleway,sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar ul li {
+	display : inline;
+	margin : 3vw;
+}
+
+.navigationBar ul li a{
+	color : white;
+	text-decoration: none;
+	line-height: 2;
+}
+
+.navigationBar ul li a:hover{
+	color : #008000;
+	font-weight: bold;
+}
+
+.heading{
+	margin : 0.75;
+	text-align : center;
+	font-family : Raleway,sans-serif;
+	font-weight : bold; 
+}
+
+.container{
+	display : flex;
+	flex-direction : column; 
+	margin : auto; 
+	width : 80%;
+	overflow : auto;
+ 	font-family : Raleway,sans-serif;
+ 	height :70%;
+	background-color:  #3CBC8D;
+	margin-bottom: 2vw;
+}
+
+.container .formBox{
+	margin: auto; 
+	text-align : center;	
+	width: 80%;
+	background: white;
+	margin-bottom: 2vw;
+}
+
+.loginForm{
+	line-height : 3;
+	border: 3px solid #400040;
+	font-size: 2vw;
+}
+
+.loginForm input[type="text"] , input[type="password"]{
+	border: none;
+	border-bottom: 0.1vw solid #3CBC8D;
+	background-color: transparent;
+	outline : none;
+	height : 3vw;	
+	color : #16af85;
+	font-size: 1.5vw;
+	width : 50%;
+}
+
+
+.loginForm input[type = "submit"] , input[type = "reset"]{
+	border : none;
+	outline: none;
+	height: 3.5vw;
+	width : 40%;
+	background : red;
+	color : #fff;
+	font-size: 1.5vw; 
+	border-radius : 2vw; 
+}
+
+form input[type = "submit"]:hover,input[type = "reset"]:hover{
+	cursor : pointer;
+	background : yellow;
+	color : #000;
+}
+
+.signUpForm{
+	line-height : 3;
+	border: 3px solid #400040;
+	font-size: 2vw;
+	background: white;
+}
+.signUpForm input[type="text"] , input[type="password"],input[type="email"],input[type="date"]{
+	border: none;
+	border-bottom: 0.1vw solid #3CBC8D;
+	background: transparent;
+	outline : none;
+	height : 3vw;	
+	color : #16af85;
+	font-size: 1.5vw;
+	width : 50%;
+}
+
+
+.signUpForm input[type = "submit"] , input[type = "reset"]{
+	border : none;
+	outline: none;
+	height: 3.5vw;
+	width : 40%;
+	background : red;
+	color : #fff;
+	font-size: 1.5vw; 
+	border-radius : 2vw; 
+}
+
+
+.footer{
+	background : #3CBC8D;
+	font-family : Raleway,sans-serif;
+	font-size : 1.25vm;
+	position :fixed;
+	bottom : 0%;
+	width  :100%;
+}
+
+.footer a{
+	color : #fff;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	font-weight: bolder;
+}
